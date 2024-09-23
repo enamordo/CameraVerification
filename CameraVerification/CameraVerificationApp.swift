@@ -4,7 +4,9 @@ import SwiftUI
 struct CameraVerificationApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CameraView()
+            
+//            MinimumCameraPreviewView()
         }
     }
 }
