@@ -16,9 +16,8 @@ struct MinimumCameraPreviewView: View {
         VStack {
             PreviewViewUIView(captureSession: captureSession)
                 .onAppear(perform: {
-                    // デバイス変数にカメラを設定
+                    // デバイス変数にカメラを設定し、デバイスインプット変数に、デバイス変数を設定
                     let videoDevice = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back)
-                    // デバイスインプット変数に、デバイス変数を設定
                     let videoDeviceInput = try? AVCaptureDeviceInput(device: videoDevice!)
                     // ②セッションにデバイスインプットを追加
                     captureSession.addInput(videoDeviceInput!)
@@ -51,10 +50,11 @@ struct PreviewViewUIView: UIViewRepresentable {
         previewView.videoPreviewLayer.session = captureSession
         return previewView
     }
-    func updateUIView(_ uiView:  PreviewView, context: Context) {
+    func updateUIView(_ uiView: PreviewView, context: Context) {
     }
 }
 
-#Preview {
-    MinimumCameraPreviewView()
-}
+// プレビューがクラッシュする
+//#Preview {
+//    MinimumCameraPreviewView()
+//}

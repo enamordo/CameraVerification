@@ -7,6 +7,8 @@ struct CameraVerificationApp: App {
             CameraView()
             
 //            MinimumCameraPreviewView()
+            
+//            MinimumCameraView()
         }
     }
 }

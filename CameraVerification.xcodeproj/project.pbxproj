@@ -12,6 +12,9 @@
 		039590CD2C9ED987002AC9D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 039590CC2C9ED987002AC9D8 /* Assets.xcassets */; };
 		039590D02C9ED987002AC9D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 039590CF2C9ED987002AC9D8 /* Preview Assets.xcassets */; };
 		039590D72C9ED9FC002AC9D8 /* MinimumCameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039590D62C9ED9FC002AC9D8 /* MinimumCameraPreviewView.swift */; };
+		03D933992CA2F61800E8E5B6 /* MinimumCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D933982CA2F61800E8E5B6 /* MinimumCameraView.swift */; };
+		03D9339B2CA2F7F100E8E5B6 /* MinimumCameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D9339A2CA2F7F100E8E5B6 /* MinimumCameraService.swift */; };
+		03D9339D2CA2F95100E8E5B6 /* MinimumCameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D9339C2CA2F95100E8E5B6 /* MinimumCameraViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		039590CC2C9ED987002AC9D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		039590CF2C9ED987002AC9D8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		039590D62C9ED9FC002AC9D8 /* MinimumCameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumCameraPreviewView.swift; sourceTree = "<group>"; };
+		03D933982CA2F61800E8E5B6 /* MinimumCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumCameraView.swift; sourceTree = "<group>"; };
+		03D9339A2CA2F7F100E8E5B6 /* MinimumCameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumCameraService.swift; sourceTree = "<group>"; };
+		03D9339C2CA2F95100E8E5B6 /* MinimumCameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumCameraViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +61,10 @@
 			children = (
 				039590C82C9ED986002AC9D8 /* CameraVerificationApp.swift */,
 				039590CA2C9ED986002AC9D8 /* CameraView.swift */,
-				039590D62C9ED9FC002AC9D8 /* MinimumCameraPreviewView.swift */,
+				03D933982CA2F61800E8E5B6 /* MinimumCameraView.swift */,
+				03D9339C2CA2F95100E8E5B6 /* MinimumCameraViewModel.swift */,
+				03D9339A2CA2F7F100E8E5B6 /* MinimumCameraService.swift */,
+				03D9339E2CA3E17F00E8E5B6 /* OnlyTest */,
 				039590CC2C9ED987002AC9D8 /* Assets.xcassets */,
 				039590CE2C9ED987002AC9D8 /* Preview Content */,
 			);
@@ -70,6 +79,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		03D9339E2CA3E17F00E8E5B6 /* OnlyTest */ = {
+			isa = PBXGroup;
+			children = (
+				039590D62C9ED9FC002AC9D8 /* MinimumCameraPreviewView.swift */,
+			);
+			path = OnlyTest;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,6 +97,7 @@
 				039590C12C9ED986002AC9D8 /* Sources */,
 				039590C22C9ED986002AC9D8 /* Frameworks */,
 				039590C32C9ED986002AC9D8 /* Resources */,
+				03ED67E82CA7F7CA0006C752 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -135,6 +153,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		03ED67E82CA7F7CA0006C752 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#if test -d /opt/homebrew/bin; then\n#    PATH=/opt/homebrew/bin/:$PATH\n#fi\n\n#if which swiftlint >/dev/null; then\n#    swiftlint\n#else\n#    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n#fi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		039590C12C9ED986002AC9D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -142,7 +181,10 @@
 			files = (
 				039590CB2C9ED986002AC9D8 /* CameraView.swift in Sources */,
 				039590D72C9ED9FC002AC9D8 /* MinimumCameraPreviewView.swift in Sources */,
+				03D9339D2CA2F95100E8E5B6 /* MinimumCameraViewModel.swift in Sources */,
+				03D933992CA2F61800E8E5B6 /* MinimumCameraView.swift in Sources */,
 				039590C92C9ED986002AC9D8 /* CameraVerificationApp.swift in Sources */,
+				03D9339B2CA2F7F100E8E5B6 /* MinimumCameraService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +320,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CameraVerification/Preview Content\"";
 				DEVELOPMENT_TEAM = 2UVDZJYF64;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "このアプリはカメラを利用します。許可しますか？";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -308,6 +351,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CameraVerification/Preview Content\"";
 				DEVELOPMENT_TEAM = 2UVDZJYF64;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "このアプリはカメラを利用します。許可しますか？";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
