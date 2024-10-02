@@ -11,7 +11,6 @@
 		039590CB2C9ED986002AC9D8 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039590CA2C9ED986002AC9D8 /* CameraView.swift */; };
 		039590CD2C9ED987002AC9D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 039590CC2C9ED987002AC9D8 /* Assets.xcassets */; };
 		039590D02C9ED987002AC9D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 039590CF2C9ED987002AC9D8 /* Preview Assets.xcassets */; };
-		039590D72C9ED9FC002AC9D8 /* MinimumCameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039590D62C9ED9FC002AC9D8 /* MinimumCameraPreviewView.swift */; };
 		03D933992CA2F61800E8E5B6 /* MinimumCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D933982CA2F61800E8E5B6 /* MinimumCameraView.swift */; };
 		03D9339B2CA2F7F100E8E5B6 /* MinimumCameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D9339A2CA2F7F100E8E5B6 /* MinimumCameraService.swift */; };
 		03D9339D2CA2F95100E8E5B6 /* MinimumCameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D9339C2CA2F95100E8E5B6 /* MinimumCameraViewModel.swift */; };
@@ -23,7 +22,6 @@
 		039590CA2C9ED986002AC9D8 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		039590CC2C9ED987002AC9D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		039590CF2C9ED987002AC9D8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		039590D62C9ED9FC002AC9D8 /* MinimumCameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumCameraPreviewView.swift; sourceTree = "<group>"; };
 		03D933982CA2F61800E8E5B6 /* MinimumCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumCameraView.swift; sourceTree = "<group>"; };
 		03D9339A2CA2F7F100E8E5B6 /* MinimumCameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumCameraService.swift; sourceTree = "<group>"; };
 		03D9339C2CA2F95100E8E5B6 /* MinimumCameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumCameraViewModel.swift; sourceTree = "<group>"; };
@@ -64,7 +62,6 @@
 				03D933982CA2F61800E8E5B6 /* MinimumCameraView.swift */,
 				03D9339C2CA2F95100E8E5B6 /* MinimumCameraViewModel.swift */,
 				03D9339A2CA2F7F100E8E5B6 /* MinimumCameraService.swift */,
-				03D9339E2CA3E17F00E8E5B6 /* OnlyTest */,
 				039590CC2C9ED987002AC9D8 /* Assets.xcassets */,
 				039590CE2C9ED987002AC9D8 /* Preview Content */,
 			);
@@ -77,14 +74,6 @@
 				039590CF2C9ED987002AC9D8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		03D9339E2CA3E17F00E8E5B6 /* OnlyTest */ = {
-			isa = PBXGroup;
-			children = (
-				039590D62C9ED9FC002AC9D8 /* MinimumCameraPreviewView.swift */,
-			);
-			path = OnlyTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,7 +169,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				039590CB2C9ED986002AC9D8 /* CameraView.swift in Sources */,
-				039590D72C9ED9FC002AC9D8 /* MinimumCameraPreviewView.swift in Sources */,
 				03D9339D2CA2F95100E8E5B6 /* MinimumCameraViewModel.swift in Sources */,
 				03D933992CA2F61800E8E5B6 /* MinimumCameraView.swift in Sources */,
 				039590C92C9ED986002AC9D8 /* CameraVerificationApp.swift in Sources */,
